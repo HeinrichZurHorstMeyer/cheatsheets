@@ -1,0 +1,58 @@
+##### FUNKTIONEN #####
+
+            ##### WICHTIGE ARTEN ######
+Lineare Funktion:
+    f(x) = mx+q
+        m = Steigung
+        q = y-Achsenabschnitt
+    Ist eine einfache gerade.
+
+Potenzfunktion r-ten Grades:
+    f(x) = cx^r
+        c = Multiplikator? Steigung?    ?
+        r = Grad der Potenzierung
+    Ist eine Hyperbel r-ter Ordnung
+
+{Polynomenfunktion/Ganzrationale Funktionen} n-ten Grades:
+    f(x) = a_n * x^n + a_(a-1) * x^(x-1) + ... + a_2 * x^2 + a_1 * x^1 + a_0
+        n E N
+        a_i E R
+        a_n != 0
+
+
+
+            ##### NULLSTELLEN #####
+
+Def: Stellen an denen die Funktion 0 ergibt.   
+        (Wenn f(x)=y: Schnittpunkte mit x-Achse = Nullstelle.)
+
+
+
+            ##### MONOTONIE #####
+
+Monoton wachsend/steigend:
+    Wenn größerer x-Wert einen größeren/gleichen Funktionswert erzeugt.
+        ( x1 <= x2 && f(x1) <= f(x2) )
+
+Streng Monoton wachsend/steigend:
+    Wenn größerer x-Wert einen größeren Funktionswert erzeugt.
+        ( x1 < x2 && f(x1) < f(x2) )
+
+Monoton fallend:
+    Wenn größerer x-Wert einen kleineren/gleichen Funktionswert erzeugt.
+        ( x1 <= x2 && f(x1) >= f(x2) )
+
+Streng Monoton fallend:
+    Wenn größerer x-Wert einen kleineren Funktionswert erzeugt.
+        ( x1 < x2 && f(x1) < f(x2) )
+
+
+
+            ##### SYMMETRIE #####
+Gerade Funktion:
+    f(x)=f(-x)
+        ( symmetrisch zur y-Achse )
+
+Ungerade Funktion (Punktsymetrisch):
+    f(x)=-f(x-)
+        ( Punktsymmetrie zu ()0/0) )
