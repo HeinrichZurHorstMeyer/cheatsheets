@@ -4,26 +4,26 @@ R = Rges
 I = Iges
 
 Reihenschaltung:
-    I = U / R = U1 / R1 = U2 / R2 = ... = Un / Rn
-
+    
     U = U1 + U2 + ... + Un
+    Un = Rn * I
 
     R = R1 + R2 + ... + Rn
 
     I = I1 = I2 = ... = In
+    I = U / R = U1 / R1 = U2 / R2 = ... = Un / Rn
 
 Parallelschaltung:
     U = U1 = U2 = ... = Un
 
-    I = I1 + I2 + ... + In
-
     1/R = 1 / R1 + 1 / R2 + ... + 1 / Rn
-
     R1,2 = (R1 * R2) / (R1 + R2)
     R1,2,3 = (R1,2 * R3) / (R1,2 + R3)
     R = (R1,2,3,...,n-1 * Rn) / (R1,2,3,...,n-1 + Rn)
-
     R1 / R2 = I2 / I1
+
+    I = I1 + I2 + ... + In
+    In = Un / Rn
 
 Erweiterte Reihenschaltung (Widerstand R1 in Reihe mit (Widerstand R2 parallel mit Widerstand R3)):
     U = I * R = U1 + U2 = U1 + U3
