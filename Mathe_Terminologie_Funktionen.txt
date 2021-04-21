@@ -56,35 +56,3 @@ Gerade Funktion:
 Ungerade Funktion (Punktsymetrisch):
     f(x)=-f(x-)
         ( Punktsymmetrie zu ()0/0) )
-
-
-
-            ##### RICHTUNG #####
-Beispiel x² = y:
-    Bereich +x:
-        x geht streng monoton gegen +unendlich.
-        y geht streng monoton gegen +unendlich.
-    Bereich -x:
-        x geht streng monoton gegen -unendlich.
-        y geht streng monoton gegen +unendlich.
-
-    Schriben als:
-        x → +-unendlich
-        y →  +unendlich
-
-Beispiel x³ = y:
-    Bereich +x:
-        x geht streng monoton gegen +unendlich.
-        y geht streng monoton gegen +unendlich.
-    Bereich -x:
-        x geht streng monoton gegen -unendlich.
-        y geht streng monoton gegen -unendlich.
-
-    Schriben als:
-        x → +-unendlich
-        y →  -unendlich
-
-
-
-            ##### STETIGKEIT #####
-Funktionen die Definitionslücken aufweisen (der Stift kann nicht in einem Zug den Grafen zeichnen) sind nicht steig.
