@@ -19,7 +19,7 @@
 		 	über mehrere Zeilen
 			gehen.
 		 */
-
+		// Kommentare sollten verwendet werden, damit man auch später noch weiß was der Code wo tut. (Dokumentier deineen Scheiß.)
 
 ##### Variablen #####
 	Variablen sind Einheiten in denen je nach Klasse eine bestimmte Art Wert gespeichert werden kann.
@@ -82,7 +82,8 @@
 
 		Parameterklasse & Parametername:
 			Kann leer gelassen werden. Bsp: void Funktionsname(){return;}
-			Wenn ein Parameter verwendet werden soll, muss dieser wie eine normale Variable deklariert werden, ohne einen Wert zu erhalten und ohne das nachfolgende ';'. Mehrere Parameter werden jeweils durch ein ',' getrennt. Beim Aufruf der Funktion müssen die Parameter in der selben Reihenfolge angegeben werden.
+			Wenn ein Parameter verwendet werden soll, muss dieser wie eine normale Variable deklariert werden, ohne einen Wert zu erhalten und ohne das nachfolgende ';'. Mehrere Parameter werden jeweils durch ein ',' getrennt.
+			Beim Aufruf der Funktion müssen die Parameter in der selben Reihenfolge angegeben werden.
 		
 		Funktionsblock / Funktionskörper:
 			Definiert den Code, der bei dem Aufruf der Funktion ausgeführt werden soll.
@@ -91,14 +92,149 @@
 		return:
 			Das ausführen dieser Zeile beendet die Funktion.
 			Sollte eine Variable folgen, wird diese zurückgegeben.
-			Nur funktionen mit dem Returntype "void" müssen sie nicht verwenden, können jedoch immer noch mit "return;" die Funktion beenden.
+			Nur funktionen mit dem Returntype "void" müssen diese Zeile nicht verwenden, können jedoch immer noch mit "return;" die Funktion beenden.
 
 	Aufruf:
-		
+		Bei dem Aufruf wird der zuvor definierte Code ausgeführt, mit den gegebenen Variablen.
+
 		Code: Funktionsname(Parameter);
+
+		Wenn die Funktion einen Resturntype hat, kann diese Funktion verwenden um einer Variable einen Wert zu geben.
+
+		Code:
+				float beispielVariable = beispielfunktion(3, 5);
+
+	Beispiel:
+				float beispielFunktion(int zaehler, int nenner) { return zaehler / nenner; }
+				float beispielVariable = beispielfunktion(3, 5);
+				// beispielVariable hat jetzt den Wert von 3/5.
+
+				int countChars(string str) {
+					int n;
+					n = str.length();
+					return n;
+				}
+
+				int chars = countChars("String.");
+				// chars hat jetzt den Wert 7.
+
+
+##### Berechnungen #####
+	In allen Fällen hat x am Ende den Wert 2.
+
+	x = 1+1;
+	x = 1 + 1;
+	x=1; x++;		// Variablenname++ 	ist equivalent zu	x=x+1.
+	x=0; x+=2;		// Variablenname+=n	ist equivalent zu	x=x+n.
+	x=2;
+
+	In allen Fällen hat x am Ende den Wert -2.
+
+	x = 1-3;
+	x = 1 - 3;
+	x=-1; x--;		// Variablenname++ 	ist equivalent zu	x=x-1.
+	x=0; x-=2;		// Variablenname+=n	ist equivalent zu	x=x-n.
+	x=-2;
+
+	In allen Fällen hat x am Ende den Wert 15.
+
+	x = 3*5;
+	x = 3 * 5;
+	x = 3; x*=5; 	// Variabllenname *= n	ist equivalent zu	x=x*n
+	x = 15;
+
+	In allen Fällen hat x am Ende den Wert 3.
+
+	x = 15 / 5;
+	x=15/5;
+	x = 15; x/=5;	// Variablenname /= n	ist equivalent zu	x = x/n
+	x = 3;
+
+
+##### Bedingungen / Vergleiche #####
+	(x und n sind hier Variablen, die beliebige Werte haben könnten.)
+	
+	Allgemein:
+		x == n		ist wahr, wenn x den gleichen Wert wie n hat. (Funktioniert bei allen Variablenklassen.)
+		true		ist immer wahr.
+		false		ist immer falsch.
+	
+	Zahlenwerte vergleichen:
+		x <  n		ist wahr, wenn x kleiner als n ist.
+		x <= n 		ist wahr, wenn x kleiner oder gleich n ist.
+		x == n		ist wahr, wenn x den gleichen Wert wie n hat.
+		x >= n		ist wahr, wenn x größer oder gleich n ist.
+		x >  n		ist wahr, wenn x größer als n ist.
+
+
+##### Verzweigunen #####
+	Ein Stück Code (if-/else-Block) wird nur ausgeführt wenn eine bestimmte Bedingung ausgeführt wird.
+	
+	If:
+		code:	if ( Bedingung ) {
+					if-Block
+				}
+
+	If-else:
+		code:	if ( Bedingung ) {
+					if-Block
+				} else {
+					else-Block
+				}
+	If-else-elif: 	später...
+	case:			später...
+
+	Beispiele:
+		int counter = 13;
+		if ( counter => 10 ) {
+			System.out.println("Done.");
+			return counter;
+		} else {
+			System.out.println("Not done yet.");
+		}
 
 
 ##### Schleifen #####
+	Grundstruktur
+        Schleifenart (Schleifenkopf) {
+            Schleifenkörper
+        }
+    
+    while
+		code:	while ( Bedingung ) {
+					while-Block
+				}
+		Bedingung:
+			Normale Bedingung, wie in einer if-Verzweigung.
+			Wird vor jedem Durchlauf geprüft.
 
-??????????????????????? später vllt
-##### Klassen #####
+		while-Block:
+			Auszuführender Code.
+			Wird bei jedem Ablauf ausgeführt.
+
+		Die Bedingung wird wie bei einer if-Verzweigung geprüft. Ist sie wahr, wird der while-Block ausgeführt.
+		Ist das Ende Erreicht, wiederholt sich alles.
+
+	for
+		code:	for (Initialisierungsargument; Bedingung; Incrementierung) {
+					for-Block
+				}
+
+		Initialisierungsargument:
+			Ausgedachtes Wort, hab keinen Plan was richtig wäre.
+			Ist eine normale deklaration einer Variable. Dieser Codeabschnitt wird einmalig ausgeführt.
+		
+		Bedingung:
+			Eine Bedingung wie bei einer if-Verzweigung.
+
+		Incrementierung:
+			Dieser Codeabschnitt wird ein mal pro Durchlauf ausgeführt.
+			Hier wird normalerweise die Variable aus dem Initialisieungsargument erhöht.
+
+		for-Block:
+			Auszuführender Code.
+			Wird bei jedem Ablauf ausgeführt.
+
+		Wird diese Schleife im Code erreicht, so wird zu erst das Initialisierungsargument (Hab ich  mir ausgedacht, kp wie man es sonst noch nennen könnte) ausgeführt.
+
+##### später kommen vllt noch Klassen und ähnliches. #####
