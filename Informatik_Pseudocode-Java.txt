@@ -1,3 +1,24 @@
+##### Bedingungen #####
+	Pseudocode:
+		denk dir was aus.
+
+	Java:
+		Zahlenwerte vergleichen:
+			x < 10 	wahr für alles kleiner als 10
+			x <= 10 wahr für alles kleiner als 10 und 10
+			x == 10 nur wahr für 10
+			x >= 10 wahr für alles größer als 10 und 10
+			x > 10	wahr für alles größer als 10
+		
+		Booleanwerte vergleichen:
+			true	immer wahr
+			false	nie wahr
+		
+		Strings und chars vergleichen:
+			x == "text"	nur wahr, wenn x eine Variable des Typs String ist und exakt den Text "text" enthält. (Anführungszeichen sind zwingend)
+			x == 's'	nur wahr, wenn x eine Variable des Typs Char ist und das Zeichen 's' enthält. (einzelnes Anführungszeichen zwingend)
+
+			
 ##### Verzweigungen #####
 	Pseudocode:
  		Wenn Bedingung:
@@ -12,19 +33,6 @@
 			else-Block
 		}
 	
-	### Bedingungen ###
-		Java:
-			Zahlenwerte vergleichen:
-				x < 10 	wahr für alles kleiner als 10
-				x <= 10 wahr für alles kleiner als 10 und 10
-				x == 10 nur wahr für 10
-				x >= 10 wahr für alles größer als 10 und 10
-				x > 10	wahr für alles größer als 10
-			
-			Booleanwerte vergleichen:
-				true	immer wahr
-				false	nie wahr
-
 	### Javabeispiel ###
 	x ist ein ganzzahliger Wert (int).
 	Wenn x 10 ist, soll ist10() ausgeführt werden.

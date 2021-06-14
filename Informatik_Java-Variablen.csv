@@ -1,4 +1,4 @@
-Klassenname, Verwendung in Java, grobe definition, Beispiele (getrennt durch ";")
+Klassenname, Name der zum deklarieren verwendet wird, grobe definition, Beispiele (getrennt durch ";")
 
 Void, void, leere Variable (hat nie einen Wert) , null
 Boolean, bool, wahr/falsch, true; false

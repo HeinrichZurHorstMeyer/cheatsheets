@@ -1,0 +1,104 @@
+##### grundlegende Syntax #####
+	generell:
+		Eine Dezimalstelle wird nicht wie in Deutschland üblich mit einem ',' gekennzeichnet, sondern mit einem '.'. (Bsp. Dtl: 1,3 Java: 1.3)
+		Es ist nur notwendig eine neue Zeile zu beginnen, um einen "//" Kommentar zu beenden, zur übersichtlichkeit sollte jedoch bspw. nach jedem ';' eine neue Zeile beginnen.
+
+	grundlegend jeder Ausdruck:
+		Ausdruck;
+	
+	Variablen deklarieren:
+		Variablenklasse Variablenname = Wert;
+	
+	Funktion aufrufen / ausführen:
+		Funktionsname(Parameter);
+
+	Kommentar:
+		// <- Ab diesem Symbol gilt die gesamte Zeile als Kommentar. Dieser hat keinen Einfluss auf das Programm.
+		/* Der hier eingegrenzte Teil gilt als Kommentar. Nach dem folgenden Zeichen gilt die Zeile nicht mehr als Kommentar. */
+		/*	Diese Art Kommentar kann
+		 	über mehrere Zeilen
+			gehen.
+		 */
+
+
+##### Variablen #####
+	Variablen sind Einheiten in denen je nach Klasse eine bestimmte Art Wert gespeichert werden kann.
+	Solte eine Variable mit dem sleben Namen deklariert werden wie bereits eine existiert, so wird die ältere überschrieben.
+	Die "Lebensdauer" einer Variable ist durch das Ende des Blocks in dem sie deklariert wird begrenzt. Danach wird sie "gelöscht".
+
+	Deklarierung / Definition:
+		Eine Variable muss deklariert werden, bevor sie anderweitig verwendet wird. Ihr muss kein Wert gegeben werden, man sollte es jedoch tun.
+
+		Code: 
+			Variablenklasse Variablenname = Wert;
+
+		Variablenklasse:
+			siehe Informatik_Java-Variablen.csv.
+		
+		Variablenname:
+			beliegiger Name. Sollte eindeutig sein und mit einem kleinen Buchstaben beginnen. Man sollte sich auch für Camelcase, hungarian spelling, oder underline entscheiden. (variablenName, strVariablenName, variablen_name) Verwende eins.
+			Es können nur alphanumerische Zeichen verwendet werden. ä, ö, ü und ß sollten nicht verwendet werden, auch wenn es funktionieren *kann*.
+		
+		Wert:
+			Der Wert den die Variable haben soll. Muss eventuell auf bestimmte Art angegeben werden (Siehe Informatik_Java-Variablen.csv und Beispiele.)
+
+	Wertzuweisung:
+		Der Wert einer Variable kann geändert werden, wenn sie nicht mit "final" definiert wurde.
+
+		code: Variablenname = Wert;
+
+		Der Wert muss gegebenenfalls je nach Variablenklasse definiert werden.
+
+	Beispiele:
+		int zaehler = 10;
+		string testText = "das ist ein Text. Er besteht aus einer aneinanderkettung von Char Variablen.";
+		char character = 's';
+		float gleitkommazahl = 1.9;
+		gleitkommazahl = 2;
+		double gleitkommazahl2 = 3.000;
+		int anzahl = zaehler();
+
+
+##### Funktionen #####
+	Funktionen sind Einheiten, in denen Programmablauf gespeichert werden kann und erneut aufgerufen werden kann.
+	Funktionen können Parameter enthalten. Diese funktionieren wie Variablen, deren Wert bei dem Aufruf festgelegt wird.
+
+	Definition:
+		Funktionen müssen wie Variablen definiert werden.
+		Auch sie haben eine Klasse, hier wird sie aber oft Returntype genannt, da es die verständlichkeit vereinfacht.
+		
+		Code: 	Returntype Funktionsname(Parameterklasse Parametername, ...) {
+					Funktionsblock/-Körper
+					return Returnvariable; //optional bei Returntype "void". Wenn void: Returnvariable leer lassen, oder komplett weglassen.
+				}
+
+		Returntype:
+			Eine Klasse wie bei den Variablenklassen inkl. "void". (Siehe Informatik_Java-Variablen.csv)
+			Ist diese nicht auf "void" gesetzt, ist die Zeile "return Returnvariable" notwendig.
+			Die Funktion gibt einen Wert dieser Klasse zurück. Das kann dafür verwendet werden einer Variable diesen Wert zuzuweisen.
+
+		Funktionsname:
+			Beliebeiger Name, identisch zu Variablenname.
+
+		Parameterklasse & Parametername:
+			Kann leer gelassen werden. Bsp: void Funktionsname(){return;}
+			Wenn ein Parameter verwendet werden soll, muss dieser wie eine normale Variable deklariert werden, ohne einen Wert zu erhalten und ohne das nachfolgende ';'. Mehrere Parameter werden jeweils durch ein ',' getrennt. Beim Aufruf der Funktion müssen die Parameter in der selben Reihenfolge angegeben werden.
+		
+		Funktionsblock / Funktionskörper:
+			Definiert den Code, der bei dem Aufruf der Funktion ausgeführt werden soll.
+			Kann Variablendeklarationen, das Aufrufen weiterer Funktionen und vieles mehr enthalten.
+
+		return:
+			Das ausführen dieser Zeile beendet die Funktion.
+			Sollte eine Variable folgen, wird diese zurückgegeben.
+			Nur funktionen mit dem Returntype "void" müssen sie nicht verwenden, können jedoch immer noch mit "return;" die Funktion beenden.
+
+	Aufruf:
+		
+		Code: Funktionsname(Parameter);
+
+
+##### Schleifen #####
+
+??????????????????????? später vllt
+##### Klassen #####
