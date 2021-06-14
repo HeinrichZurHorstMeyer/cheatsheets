@@ -19,7 +19,7 @@
 		 	über mehrere Zeilen
 			gehen.
 		 */
-		// Kommentare sollten verwendet werden, damit man auch später noch weiß was der Code wo tut. (Dokumentier deineen Scheiß.)
+		// Kommentare sollten verwendet werden, damit man auch später noch weiß was der Code wo tut. (Dokumentier deinen Scheiß.)
 
 ##### Variablen #####
 	Variablen sind Einheiten in denen je nach Klasse eine bestimmte Art Wert gespeichert werden kann.
