@@ -1,0 +1,84 @@
+##### Verzweigungen #####
+	Pseudocode:
+ 		Wenn Bedingung:
+			Auszuführender Block
+		Sonst
+			Alternativer Block
+
+	Java:
+		if ( Bedingung ) {
+			if-Block
+		} else {
+			else-Block
+		}
+	
+	### Bedingungen ###
+		Java:
+			Zahlenwerte vergleichen:
+				x < 10 	wahr für alles kleiner als 10
+				x <= 10 wahr für alles kleiner als 10 und 10
+				x == 10 nur wahr für 10
+				x >= 10 wahr für alles größer als 10 und 10
+				x > 10	wahr für alles größer als 10
+			
+			Booleanwerte vergleichen:
+				true	immer wahr
+				false	nie wahr
+
+	### Javabeispiel ###
+	x ist ein ganzzahliger Wert (int).
+	Wenn x 10 ist, soll ist10() ausgeführt werden.
+	Sonst soll nicht10() ausgeführt werden.
+
+	if ( x == 10 ) {
+		ist10();
+	} else {
+		nicht10();
+	}
+
+##### Schleife #####
+	### Grundstruktur ###
+		Pseudocode:
+			Schleifenart Schleifenkopf:
+				Schleifenkörper
+		
+		Java:
+			Schleifenart (Schleifenkopf) {
+				Schleifenkörper
+			}
+	
+	### while ###
+		Pseudocode:
+			bis Bedingung:
+				auszuführender Block
+
+		Java:
+			while ( Bedingung ) {
+				while-Block
+			}
+
+		# Javabeispiel #
+			So lange wie der wahr-/falsch-Wert (bool) test wahr ("true) ist, soll die Funktion istWahr() ausgeführt werden.
+
+			while (test) {
+				istWahr()
+			}
+
+	### for ###
+		Pseudocode:
+			?
+
+		Java:
+			for (Initialisierungswert; Bedingung; Incrementierung) {
+				for-Block
+			}
+
+		# Javabeispiel #
+			Die Funktion f(x) soll 10 mal ausgeführt werden mit x = alle Werte von 0 bis 9.
+
+			for ( int i = 0; i < 10; i++ ) {
+				// Der Block wird zu erst mit i = 0 ausgeführt, dann i = 1 ... und zu letzt i = 9.
+				f(i);
+				// Jedes mal, wenn das Ende des if-Blocks erreicht wird wird die Bedingung geprüft. Wenn sie nicht wahr ist, wird die Schleife beendet.
+			}
+
