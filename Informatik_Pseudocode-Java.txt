@@ -82,3 +82,39 @@
 				// Jedes mal, wenn das Ende des if-Blocks erreicht wird wird die Bedingung geprüft. Wenn sie nicht wahr ist, wird die Schleife beendet.
 			}
 
+##### Methoden / Funktionen #####
+	Ich verwende beide Begriffe austauschbar, kein Plan ob es irgendeinen Unterschied gibt.
+	Funktionen können einen Wert zurückgeben, der "Returnwert". Dieser kann von einer beliebigen Variablenart (eigentlich Variablenklasse) (siehe Informatik_Java-Variablen.csv.) sein. Die Variablenklasse muss als Returntype angegeben werden. (Bsp. int, float, string, char, void ...)
+	Soll keine Variable zurückgegeben werden, verwendet man "void" als Returntype.
+
+	### Pseudocode ###
+		?
+	
+	### Java ###
+		// der Funktionsname ist beliebig, es ist gerne gesehen, wenn man Funktions- und Variablennamen mit einem kleinen Buchstaben beginnt.
+		
+		Returntyp Funktionsname(Parameterklasse Parametername, ...) {
+			Funktionsblock
+			return Returnvariable;
+			// die letzte Zeile kann bei dem Returntype "void" weggelassen werden.
+		}
+
+	# Javabeispiele #
+		Eine Funktion soll "definiert" werden, die eine Funktion namens "vor()" drei mal ausführt und danach den Text "Ich bin da" ausführt.
+		Sie soll keinen Wert zurück geben.
+
+		void laufen() {
+			for ( int i = 0; i < 3; i++) {
+				vor();
+			}
+
+			// System.out.println() ist einfach nur eine Funktion die in Standard Java einen String in die Konsole ausgeben kann.
+			System.out.println("Ich bin da".)
+		}
+
+		Eine Funktion soll definiert werden, die zwei gazzahlige Werte dividiert. Sie soll das Ergebnis als ein "float" wert zurückgeben.
+
+		float division(int zaehler, int nenner) {
+			float ergebnis = zaehler / nenner;
+			return ergebnis.
+		}
