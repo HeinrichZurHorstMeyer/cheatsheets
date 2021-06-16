@@ -159,12 +159,29 @@
 		true		ist immer wahr.
 		false		ist immer falsch.
 	
+	Zeichen:
+		!			negiert einen Wert
+		>			links ist größer als rechts
+		>=			links ist größer/gleich rechts
+		==			links ist gleich rechts ("=" wird nur zur Wertezuweisung (Variablen) verwendet.)
+		<=			links ist kleiner/gleich rechts
+		<			linsk ist kleinr als rechts
+
 	Zahlenwerte vergleichen:
 		x <  n		ist wahr, wenn x kleiner als n ist.
 		x <= n 		ist wahr, wenn x kleiner oder gleich n ist.
 		x == n		ist wahr, wenn x den gleichen Wert wie n hat.
 		x >= n		ist wahr, wenn x größer oder gleich n ist.
 		x >  n		ist wahr, wenn x größer als n ist.
+
+	Booleanwerte vergleichen:
+		true == false		ist falsch
+		false == true		ist falsch
+		true == true		ist wahr
+		false == false		ist wahr
+		!true == false		ist wahr
+		!false == true		ist wahr
+		!(true == false)	ist wahr
 
 
 ##### Verzweigunen #####
@@ -237,4 +254,4 @@
 
 		Wird diese Schleife im Code erreicht, so wird zu erst das Initialisierungsargument (Hab ich  mir ausgedacht, kp wie man es sonst noch nennen könnte) ausgeführt.
 
-##### später kommen vllt noch Klassen und ähnliches. #####
+##### später kommen vllt noch Klassen und ähnliches... #####
