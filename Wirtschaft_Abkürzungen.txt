@@ -1,0 +1,20 @@
+FD,		Fertigungsdauer
+FE,		Fertigungserzeugnis
+FGK,	Fertigungsgemeinkosten,				GK die einem Produkt nicht direkt zurechenbar sind. Entstehen im Zusammenhang mit der Fertigung bzw. Produktion. (bspw: Miete für Fabrikhalle; Leasingrate f+r Produktionsgeräte; Abschribungen (Verschleiß))
+FL,		Fertigungslöhne
+GK,		Gemeinkosten
+I.,		Investitionen
+KZ,		Kundenziel,							Bis wann der Kunde gezahlt haben soll.
+LD,		Lagerdauer (/Lieferdauer)
+LZ,		Lieferziel
+MGK,	Materialgemeinkosten,				GK die einem Produkt nicht direkt zurechenbar sind. Entstehen im Zusammenhang mit dem Material. (bspw: Personalkosten Einkaufsabteilung)
+PD,		Produktionsdauer
+RS,		Rohstoffe
+U.,		Unternehmen
+VtGK,	Vertriebsgemeinkosten,				GK die einem Produkt nicht direkt zurechenbar sind. Kosten die in dem Vertrieb (inkl. Marketing) entstehen.
+VwGK,	Verwaltungsgemeinkosten,			GK die einem Produkt nicht direkt zurechenbar sind. Kosten die in der Verwaltung entstehen.
+KB,		Kapitalbedarf
+AV,		Anlagevermögen
+BGA,	Betriebs- & Geschäftsausstattungen,	Sämtliche Ausstattungsgegenstände für das Personal. (Keine maschinellen Anlagen)
+UV,		Umlaufvermögen
+EB,		eiserner Bestand,					RS-Reserven, die nie angegriffen werden sollten.
